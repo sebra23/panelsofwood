@@ -125,7 +125,7 @@ export const content: Record<Language, ContentSet> = {
       cta: 'Konfigurieren',
     },
     hero: {
-      eyebrow: 'CHF 59 pro Panel — Kostenlose Lieferung in der Schweiz',
+      eyebrow: 'Kostenlose Lieferung in der Schweiz',
       h1: 'Akustik-Holzpaneele',
       subtitle:
         'Premium Eiche- und Nussbaum-Paneele mit Schallfilz. Lagerverkauf Schweiz. Lieferung in 8-12 Tagen.',
@@ -333,7 +333,7 @@ export const content: Record<Language, ContentSet> = {
       cta: 'Configurer',
     },
     hero: {
-      eyebrow: 'CHF 59 par panneau — Livraison gratuite en Suisse',
+      eyebrow: 'Livraison gratuite en Suisse',
       h1: 'Panneaux Acoustiques en Bois',
       subtitle:
         "Panneaux premium en chêne et noyer avec feutre acoustique. Livraison en 8-12 jours.",
@@ -539,7 +539,7 @@ export const content: Record<Language, ContentSet> = {
       cta: 'Configura',
     },
     hero: {
-      eyebrow: 'CHF 59 a pannello — Consegna gratuita in Svizzera',
+      eyebrow: 'Consegna gratuita in Svizzera',
       h1: 'Pannelli Acustici in Legno',
       subtitle:
         'Pannelli premium in rovere e noce con feltro acustico. Consegna in 8-12 giorni.',
@@ -745,7 +745,7 @@ export const content: Record<Language, ContentSet> = {
       cta: 'Configure',
     },
     hero: {
-      eyebrow: 'CHF 59 per panel — Free delivery across Switzerland',
+      eyebrow: 'Free delivery across Switzerland',
       h1: 'Acoustic Wood Wall Panels',
       subtitle:
         'Premium oak and walnut panels with acoustic felt. Delivery in 8-12 days.',
