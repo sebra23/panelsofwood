@@ -147,7 +147,7 @@ export default function Home() {
 
       {/* Blog Section */}
       <BlogSection
-        posts={blogPosts}
+        posts={[...blogPosts].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 6)}
         lang={lang}
         title={lang === 'de' ? 'Inspiration & Tipps' : lang === 'fr' ? 'Inspiration & Conseils' : lang === 'it' ? 'Ispirazione & Consigli' : 'Inspiration & Tips'}
         subtitle={lang === 'de' ? 'Ideen für Ihr nächstes Projekt' : lang === 'fr' ? 'Idées pour votre prochain projet' : lang === 'it' ? 'Idee per il vostro prossimo progetto' : 'Ideas for your next project'}
