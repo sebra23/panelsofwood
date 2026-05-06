@@ -45,7 +45,7 @@ export default function Home() {
         />
         <div className="absolute inset-0" style={{ backgroundColor: 'rgba(28,25,23,0.45)' }} />
         <div className="hero-content relative z-10 text-center px-4 max-w-3xl">
-          <p className="text-[12px] lg:text-[13px] font-semibold tracking-[0.15em] uppercase mb-5 lg:hidden" style={{ color: '#B45309' }}>
+          <p className="text-[12px] lg:text-[13px] font-semibold tracking-[0.15em] uppercase mb-5" style={{ color: '#B45309' }}>
             {c.hero.eyebrow}
           </p>
           <h1
