@@ -1,0 +1,35 @@
+import { createContext, useContext, useState, useCallback, type ReactNode } from 'react'
+import type { Language } from './content'
+
+interface LanguageContextType {
+  lang: Language
+  setLang: (lang: Language) => void
+}
+
+const LanguageContext = createContext<LanguageContextType | null>(null)
+
+export function LanguageProvider({
+  children,
+  initialLang,
+}: {
+  children: ReactNode
+  initialLang: Language
+}) {
+  const [lang, setLangState] = useState<Language>(initialLang)
+
+  const setLang = useCallback((newLang: Language) => {
+    setLangState(newLang)
+  }, [])
+
+  return (
+    <LanguageContext.Provider value={{ lang, setLang }}>
+      {children}
+    </LanguageContext.Provider>
+  )
+}
+
+export function useLanguage() {
+  const ctx = useContext(LanguageContext)
+  if (!ctx) throw new Error('useLanguage must be inside LanguageProvider')
+  return ctx
+}
