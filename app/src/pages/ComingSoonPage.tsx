@@ -40,7 +40,7 @@ export default function ComingSoonPage({ onLoginSuccess }: { onLoginSuccess: () 
 
       {/* Main Content Box */}
       <div className="relative z-10 w-full max-w-md p-8 md:p-10 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl mx-4 text-center">
-        <h1 className="text-3xl md:text-4xl font-light tracking-tight text-[#1C1917] mb-2" style={{ fontFamily: 'Playfair Display, serif' }}>
+        <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#1C1917] mb-2">
           PanelsOfWood
         </h1>
         <p className="text-[#78716C] mb-8 text-sm uppercase tracking-widest">Coming Soon</p>
