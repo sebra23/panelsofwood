@@ -29,14 +29,11 @@ export default function ComingSoonPage({ onLoginSuccess }: { onLoginSuccess: () 
 
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
       <img
         src="/coming-soon-bg.jpg"
         alt="Scandinavian Interior"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      {/* Overlay to ensure text readability */}
-      <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]" />
 
       {/* Main Content Box */}
       <div className="relative z-10 w-full max-w-md p-8 md:p-10 bg-white/95 backdrop-blur-md shadow-2xl rounded-2xl mx-4 text-center">
