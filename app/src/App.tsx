@@ -9,7 +9,9 @@ import CollectionPage from './pages/CollectionPage'
 import ProductPage from './pages/ProductPage'
 import BlogPage from './pages/BlogPage'
 import BlogOverviewPage from './pages/BlogOverviewPage'
+import ComingSoonPage from './pages/ComingSoonPage'
 import type { Language } from './lib/content'
+import { useState, useEffect } from 'react'
 
 function AppRoutes() {
   return (
@@ -29,6 +31,19 @@ function AppRoutes() {
 }
 
 export default function App() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false)
+
+  useEffect(() => {
+    // Check authentication status on load
+    if (localStorage.getItem('admin_auth') === 'true') {
+      setIsAuthenticated(true)
+    }
+  }, [])
+
+  if (!isAuthenticated) {
+    return <ComingSoonPage onLoginSuccess={() => setIsAuthenticated(true)} />
+  }
+
   // With HashRouter, the route is in the hash (e.g. #/en/products/...)
   const hash = window.location.hash.replace('#', '') || '/'
   const pathLang = hash.split('/')[1] as Language
